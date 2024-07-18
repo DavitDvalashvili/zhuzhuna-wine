@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Arial GEO";
+  src: url("/fonts/arial_geo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ALK Tommaso";
+  src: url("/fonts/alk_tommaso.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
