@@ -7,6 +7,8 @@ export default {
       fontFamily: {
         arialgeo: ['"Arial GEO"', "sans-serif"],
         tommaso: ['"ALK Tommaso"', "sans-serif"],
+        odibeeSans: ['"Odibee Sans"', "sans-serif"],
+        "mate-sc": ['"Mate SC"', "serif"],
       },
       colors: {
         backgroundColor: {
@@ -28,11 +30,6 @@ export default {
           dark: {
             black: "#fff",
           },
-        },
-
-        logoColor: {
-          circle: "#BA92ED",
-          insideCircle: "#000",
         },
 
         buttonColor: {

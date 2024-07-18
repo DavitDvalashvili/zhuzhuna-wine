@@ -15,8 +15,6 @@ const useCountry = () => {
           },
         });
 
-        console.log(response.data); // Log the entire response to debug
-
         if (response.data && response.data.country) {
           setCountry(response.data.country);
         } else {

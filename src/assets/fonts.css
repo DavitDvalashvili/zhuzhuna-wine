@@ -1,13 +1,19 @@
 @font-face {
   font-family: "Arial GEO";
-  src: url("/fonts/arial_geo.ttf") format("truetype");
+  src: url("../../public//fonts/arial_geo.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ALK Tommaso";
-  src: url("/fonts/alk_tommaso.otf") format("opentype");
+  src: url("../../public//fonts/alk_tommaso.otf") format("opentype");
   font-weight: normal;
+  font-style: normal;
+}
+
+.odibee-sans-regular {
+  font-family: "Odibee Sans", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
