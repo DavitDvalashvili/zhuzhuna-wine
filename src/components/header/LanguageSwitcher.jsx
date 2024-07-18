@@ -3,25 +3,29 @@ import geo from "./../../../public/icons/georgian.svg";
 import eng from "./../../../public/icons/english.svg";
 
 const LanguageSwitcher = () => {
-  const { language, setLanguage } = useLanguage();
-  console.log(`langauge: ${language}`);
+  const { language, setLanguage } = useLanguage("GE");
+  console.log(language);
 
   return (
-    <div>
-      <img
-        src={geo}
-        onClick={() => {
-          setLanguage("GEO");
-        }}
-        alt="Georgian"
-      />
-      <img
-        src={eng}
-        onClick={() => {
-          setLanguage("ENG");
-        }}
-        alt="English"
-      />
+    <div className="cursor-pointer">
+      {language === "EN" && (
+        <img
+          src={geo}
+          onClick={() => {
+            setLanguage("GE");
+          }}
+          alt="Georgian"
+        />
+      )}
+      {language === "GE" && (
+        <img
+          src={eng}
+          onClick={() => {
+            setLanguage("EN");
+          }}
+          alt="English"
+        />
+      )}
     </div>
   );
 };

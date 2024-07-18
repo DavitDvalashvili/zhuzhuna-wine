@@ -9,12 +9,12 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(null);
 
   useEffect(() => {
-    if (country === "GE") {
+    if (country.country === "GE") {
       setLanguage("GE");
-    } else {
+    } else if (country.country === "EN") {
       setLanguage("EN");
     }
-  }, [country]);
+  }, [country.country]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
