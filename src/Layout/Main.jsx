@@ -1,5 +1,13 @@
+import About from "../components/About";
+import Zhuzhuna from "../components/Zhuzhuna";
+
 const Main = () => {
-  return <div>main</div>;
+  return (
+    <main>
+      <Zhuzhuna />
+      <About />
+    </main>
+  );
 };
 
 export default Main;
