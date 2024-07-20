@@ -7,8 +7,6 @@ export default {
       fontFamily: {
         arialgeo: ['"Arial GEO"', "sans-serif"],
         tommaso: ['"ALK Tommaso"', "sans-serif"],
-        odibeeSans: ['"Odibee Sans"', "sans-serif"],
-        "mate-sc": ['"Mate SC"', "serif"],
       },
       colors: {
         backgroundColor: {
@@ -51,6 +49,9 @@ export default {
             secondary: "#000",
           },
         },
+      },
+      screens: {
+        xl: "1440px",
       },
     },
   },

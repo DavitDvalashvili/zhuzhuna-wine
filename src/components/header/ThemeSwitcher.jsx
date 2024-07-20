@@ -1,5 +1,5 @@
-import sun from "./../../../public/icons/sun.svg";
-import moon from "./../../../public/icons/moon.svg";
+import sun from "/icons/sun.svg";
+import moon from "/icons/moon.svg";
 import { useState } from "react";
 
 const ThemeSwitcher = () => {
@@ -18,7 +18,7 @@ const ThemeSwitcher = () => {
   return (
     <div onClick={toggleDarkMode}>
       <img
-        className="w-[15px] h-[15px]"
+        className="w-[20px] h-[20px]"
         src={darkMode ? sun : moon}
         alt="light and light"
       />
