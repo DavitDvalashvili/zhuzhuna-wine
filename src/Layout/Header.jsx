@@ -9,7 +9,6 @@ const Header = () => {
   const width = useWindowWidth();
   const { language } = useLanguage();
   const [showNav, setShowNav] = useState(false);
-  console.log(width);
 
   return (
     <header className="bg-backgroundColor-dark-backgroundCol px-[20px] pt-[40px] pb-[10px] flex items-center gap-[15px] relative xl:px-[72px]  xl:py-[11px]">
