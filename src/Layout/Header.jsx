@@ -12,9 +12,9 @@ const Header = () => {
   console.log(width);
 
   return (
-    <header className="bg-backgroundColor-dark-backgroundCol px-[20px] pt-[40px] pb-[10px] flex items-center gap-[15px] relative ">
+    <header className="bg-backgroundColor-dark-backgroundCol px-[20px] pt-[40px] pb-[10px] flex items-center gap-[15px] relative xl:px-[72px]  xl:py-[11px]">
       <img className="w-[45px] h-[45px] mr-auto" src={logo} alt="logo" />
-      {showNav || (width >= 1024 && <NavBar />)}
+      {showNav || width > 1024 ? <NavBar /> : ""}
       <div className="text-color-primary text-[24px] mr-[42px] ">
         {width < 1024 && (
           <button

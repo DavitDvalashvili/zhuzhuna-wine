@@ -6,7 +6,7 @@ const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
   const country = useCountry();
-  const [language, setLanguage] = useState(null);
+  const [language, setLanguage] = useState("GE");
 
   useEffect(() => {
     if (country.country === "GE") {

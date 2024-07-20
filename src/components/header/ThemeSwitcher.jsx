@@ -18,7 +18,7 @@ const ThemeSwitcher = () => {
   return (
     <div onClick={toggleDarkMode}>
       <img
-        className="w-[20px] h-[20px]"
+        className="w-[20px] h-[20px] cursor-pointer"
         src={darkMode ? sun : moon}
         alt="light and light"
       />
