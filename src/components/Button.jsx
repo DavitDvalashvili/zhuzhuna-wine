@@ -4,7 +4,7 @@ const Button = () => {
   const { language } = useLanguage();
 
   return (
-    <button className="bg-color-black font-arialgeo cursor-pointer rounded-[50px] px-[21px] xl:p-[14px] py-[7px] text-[16px] leading-[18px]  block ml-auto">
+    <button className="bg-color-black text-color-primary font-arialgeo cursor-pointer rounded-[50px] px-[21px] xl:p-[14px] py-[7px] text-[16px] leading-[18px]  block ml-auto">
       {language == "GE" ? " გაიგე მეტი" : "See more"}
     </button>
   );
