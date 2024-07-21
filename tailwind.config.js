@@ -52,6 +52,10 @@ export default {
       },
       screens: {
         xl: "1440px",
+        xs: "425px",
+      },
+      mixBlendMode: {
+        difference: "difference",
       },
     },
   },

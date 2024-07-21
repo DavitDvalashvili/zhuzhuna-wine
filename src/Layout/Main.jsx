@@ -1,11 +1,15 @@
 import About from "../components/About";
 import Zhuzhuna from "../components/Zhuzhuna";
+import News from "../components/News";
+import Bottle from "../components/Bottle";
 
 const Main = () => {
   return (
-    <main>
+    <main className="">
       <Zhuzhuna />
       <About />
+      <News />
+      <Bottle />
     </main>
   );
 };

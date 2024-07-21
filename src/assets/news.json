@@ -1,0 +1,48 @@
+{
+  "GE": [
+    {
+      "id": "1",
+      "title": "დეგიუსტაცია",
+      "description": "დააგემოვნეთ ჩვენი ღვინო ყოველწლიურად გამართულ დეგუსტაციაზე და იგრძენით ნამდვილი გემო",
+      "date": "17 აგვისტო, 2024",
+      "image": "/images/pour.png"
+    },
+    {
+      "id": "2",
+      "title": "რთველი",
+      "description": "ეწვიეთ ჩვენს რთველს და შეიტყვეთ მეტი ჟუჟუნას წარმოების პროცესზე და მის წარმომავლობაზე",
+      "date": "25 სექტემბერი, 2024",
+      "image": "/images/grape.png"
+    },
+    {
+      "id": "3",
+      "title": "ღვინის საღამო",
+      "description": "ჩვენი ღვინო, ჯაზის მუსიკა, კომფორტული საღამო. გაატარეთ დაუვიწყარი საღამო ჩვენთან ერთად",
+      "date": "2 ოქტომბერი, 2024",
+      "image": "/images/glasswine.png"
+    }
+  ],
+  "EN": [
+    {
+      "id": "1",
+      "title": "Degustation",
+      "description": "Taste our wine at the annual degustation and experience the true flavor.",
+      "date": "August 17, 2024",
+      "image": "/images/pour.png"
+    },
+    {
+      "id": "2",
+      "title": "Harvest",
+      "description": "Visit our harvest and learn more about the production process and origins of Jujuna.",
+      "date": "September 25, 2024",
+      "image": "/images/grape.png"
+    },
+    {
+      "id": "3",
+      "title": "Wine Evening",
+      "description": "Our wine, jazz music, and a comfortable evening. Spend an unforgettable evening with us.",
+      "date": "October 2, 2024",
+      "image": "/images/glasswine.png"
+    }
+  ]
+}
