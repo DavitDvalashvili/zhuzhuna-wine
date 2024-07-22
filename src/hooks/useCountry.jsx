@@ -1,9 +1,8 @@
-// useCountry.js
 import { useState, useEffect } from "react";
 import axios from "axios";
 
 const useCountry = () => {
-  const [country, setCountry] = useState(null);
+  const [country, setCountry] = useState("GE");
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -26,7 +25,7 @@ const useCountry = () => {
     };
 
     fetchCountry();
-  }, []);
+  }, [country]);
 
   return { country, error };
 };

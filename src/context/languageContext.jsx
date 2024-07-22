@@ -11,7 +11,7 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     if (country.country === "GE") {
       setLanguage("GE");
-    } else if (country.country === "EN") {
+    } else {
       setLanguage("EN");
     }
   }, [country.country]);
