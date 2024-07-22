@@ -4,6 +4,7 @@ import News from "../components/News";
 import Bottle from "../components/Bottle";
 import MobileBar from "../components/MobileBar";
 import Contact from "../components/Contact";
+import Cocktails from "../components/Cocktails";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <About />
       <News />
       <Bottle />
+      <Cocktails />
       <MobileBar />
       <Contact />
     </main>

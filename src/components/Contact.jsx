@@ -134,14 +134,22 @@ const Contact = () => {
       </form>
       <div className="max-w-[177px] text-[12px] xl:text-[24px] text-color-primary font-arialgeo xl:max-w-[unset] xl:w-[685px]">
         <p className="mb-[9px]">
-          ქორფა ჟუჟუნა უუუამრავ კაფე-ბარში შეგხვდება და შენთვის საყვარელ
+          {language == "GE"
+            ? `ქორფა ჟუჟუნა უამრავ კაფე-ბარში შეგხვდება და შენთვის საყვარელ
           კოქტეილებს ააცქრიალებს. ცივი და ჩქრიალა ჟუჟუ კოქტეილში პირდაპირ
-          ონკანიდან ეშვება.
+          ონკანიდან ეშვება.`
+            : `You will find fresh Zhuzhuna in countless cafes and bars, and it will 
+            sparkle your favorite cocktails. Cold and bubbly Zhuzhu flows directly 
+            from the tap into the cocktail.`}
         </p>
         <p>
-          ჩამოსასხმელი ჟუჟუნა კაფე-ბარებს მრავალჯერადი გამოყენების კეგებში
+          {language == "GE"
+            ? `ჩამოსასხმელი ჟუჟუნა კაფე-ბარებს მრავალჯერადი გამოყენების კეგებში
           მიეწოდება და დამატებით შეფუთვას არ საჭიროებს, რის გამოც გარემოსთან
-          განსაკუთრებით მეგობრობს და არც მის დაბინძურებას იწვევს.
+          განსაკუთრებით მეგობრობს და არც მის დაბინძურებას იწვევს.`
+            : `Draft Zhuzhuna is supplied to cafes and bars in reusable kegs and 
+            does not require additional packaging, making it particularly environmentally 
+            friendly and not contributing to pollution.`}
         </p>
       </div>
     </section>

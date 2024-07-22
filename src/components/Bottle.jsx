@@ -1,8 +1,8 @@
 import { useLanguage } from "../context/languageContext.jsx";
+import useWindowWidth from "./../hooks/useWindowWidth.jsx";
 import bottle from "/images/bottle.png";
 import bckg1 from "/images/bckg1.png";
 import bckg2 from "/images/bckg2.png";
-import useWindowWidth from "./../hooks/useWindowWidth.jsx";
 
 const Bottle = () => {
   const { language } = useLanguage();
@@ -10,7 +10,7 @@ const Bottle = () => {
 
   return (
     <section className="xl:px-[80px] bg-backgroundColor-backgroundCol ">
-      <h2 className="mb-[20px] px-[20px] xl:px-[0px] text-[40px] leading-[46px] font-tommaso ">
+      <h2 className="mb-[20px] px-[20px] xl:px-[0px] text-[40px] xl:text-[64px] leading-[46px] font-tommaso ">
         {language == "GE" ? "ბოთლი" : "Bottle"}
       </h2>
       <div

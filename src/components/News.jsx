@@ -7,7 +7,7 @@ const News = () => {
 
   return (
     <section className="p-[20px] xl:px-[80px] xl:py-[40px] bg-backgroundColor-backgroundCol ">
-      <h2 className="mb-[20px] text-[48px] leading-[56px] font-tommaso">
+      <h2 className="mb-[20px] text-[48px] xl:text-[64px] leading-[56px] font-tommaso">
         {language == "GE" ? "სიახლეები" : "News"}
       </h2>
       <div className="flex flex-col gap-[20px] bg-center max-w-[768px] xl:max-w-full xl:flex-row xl:justify-evenly mx-auto">

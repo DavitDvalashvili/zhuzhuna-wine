@@ -1,0 +1,144 @@
+{
+  "GE": [
+    {
+      "name": "აპეროლ შპრიტსი",
+      "ingredients": [
+        {
+          "ingredient": "აპეროლი",
+          "quantity": "50 მლ"
+        },
+        {
+          "ingredient": "ფორთოხალი",
+          "quantity": "1 ნაჭერი"
+        },
+        {
+          "ingredient": "ყინული",
+          "quantity": "სავსე ჭიქა"
+        },
+        {
+          "ingredient": "ტონიკი",
+          "quantity": "20 მგ"
+        },
+        {
+          "ingredient": "ჟუჟუნა",
+          "quantity": "150 მლ"
+        }
+      ],
+      "image": "/images/cocktail1.png",
+      "id": "1"
+    },
+    {
+      "name": "კენკრიანი ჟუჟუნა",
+      "ingredients": [
+        {
+          "ingredient": "ყინული",
+          "quantity": "ნახევარი ჭიქა"
+        },
+        {
+          "ingredient": "კენკრა",
+          "quantity": "70 გრ"
+        },
+        {
+          "ingredient": "ჟუჟუნა",
+          "quantity": "150 მლ"
+        },
+        {
+          "ingredient": "გრენადინის სიროფი",
+          "quantity": "10 მლ"
+        }
+      ],
+      "image": "/images/cocktail2.png",
+      "id": "2"
+    },
+    {
+      "name": "მიმოზა",
+      "ingredients": [
+        {
+          "ingredient": "ყინული",
+          "quantity": "ნახევარი ჭიქა"
+        },
+        {
+          "ingredient": "ფორთოხლის ფრეში",
+          "quantity": "50 მლ"
+        },
+        {
+          "ingredient": "ჟუჟუნა",
+          "quantity": "130 მლ"
+        }
+      ],
+      "image": "/images/cocktail3.png",
+      "id": "3"
+    }
+  ],
+  "EN": [
+    {
+      "name": "Aperol Spritz",
+      "ingredients": [
+        {
+          "ingredient": "Aperol",
+          "quantity": "50 ml"
+        },
+        {
+          "ingredient": "Orange",
+          "quantity": "1 slice"
+        },
+        {
+          "ingredient": "Ice",
+          "quantity": "Full glass"
+        },
+        {
+          "ingredient": "Tonic",
+          "quantity": "20 ml"
+        },
+        {
+          "ingredient": "Zhuzhuna",
+          "quantity": "150 ml"
+        }
+      ],
+      "image": "/images/cocktail1.png",
+      "id": "1"
+    },
+    {
+      "name": "Berry Zhuzhuna",
+      "ingredients": [
+        {
+          "ingredient": "Ice",
+          "quantity": "Half glass"
+        },
+        {
+          "ingredient": "Berries",
+          "quantity": "70 g"
+        },
+        {
+          "ingredient": "Zhuzhuna",
+          "quantity": "150 ml"
+        },
+        {
+          "ingredient": "Grenadine Syrup",
+          "quantity": "10 ml"
+        }
+      ],
+      "image": "/images/cocktail2.png",
+      "id": "2"
+    },
+    {
+      "name": "Mimosa",
+      "ingredients": [
+        {
+          "ingredient": "Ice",
+          "quantity": "Half glass"
+        },
+        {
+          "ingredient": "Orange Juice",
+          "quantity": "50 ml"
+        },
+        {
+          "ingredient": "Zhuzhuna",
+          "quantity": "130 ml"
+        }
+      ],
+      "image": "/images/cocktail3.png",
+      "id": "3"
+    }
+  ]
+}
