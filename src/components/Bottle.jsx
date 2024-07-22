@@ -35,7 +35,7 @@ const Bottle = () => {
           <div className="flex flex-col xl:flex-row xl:mb-[50px] items-end gap-[10px] xl:gap-[20px] text-color-primary text-[14px] leading-[18px] xl:text-[20px] xl:leading-[23px] font-arialgeo mb-[10px]">
             <p className="w-[140px] xs:w-[160px]  h-[68px] xl:w-[173px]  xl:h-[84px] bg-buttonColor-primary rounded-[10px] flex flex-col justify-center items-center">
               <span>{language == "GE" ? "მოცულობა" : "Volume"} </span>
-              <span>{language == "EN" ? "250 მლ" : "250 ml"}</span>
+              <span>{language == "GE" ? "250 მლ" : "250 ml"}</span>
             </p>
             <p className="w-[140px] xs:w-[160px] h-[68px] xl:w-[173px]  xl:h-[84px] bg-buttonColor-primary  rounded-[10px] flex flex-col justify-center items-center">
               <span>{language == "GE" ? "ალკოჰოლი" : "Alcohol"}</span>
