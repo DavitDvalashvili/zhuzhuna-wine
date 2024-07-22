@@ -7,6 +7,8 @@ import useWindowWidth from "./../hooks/useWindowWidth.jsx";
 import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
 import animationVariants from "./../animations/animationVariants.jsx";
 import { motion } from "framer-motion";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const { language } = useLanguage();
@@ -28,11 +30,27 @@ const Contact = () => {
     });
   };
 
+  // display error message on the screen
+  const handleError = (message) => {
+    toast.error(message, {
+      position: "top-right",
+      autoClose: 1000,
+    });
+  };
+
+  //display success message on the screen
+  const handleSuccess = (message) => {
+    toast.success(message, {
+      position: "top-right",
+      autoClose: 1000,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const serviceID = "service_7150c0g";
-    const templateID = "template_2o0zlkh";
+    const templateID = "template_2o0zlkk";
     const userID = "iT2E3wYN0u4FTwetc";
 
     const templateParams = {
@@ -45,11 +63,11 @@ const Contact = () => {
     emailjs.send(serviceID, templateID, templateParams, userID).then(
       (response) => {
         console.log("SUCCESS!", response.status, response.text);
-        alert("Message sent successfully!");
+        handleSuccess("Message sent successfully!");
       },
       (err) => {
         console.log("FAILED...", err);
-        alert("Failed to send message.");
+        handleError("Failed to send message.");
       }
     );
     setFormData({
@@ -167,6 +185,7 @@ const Contact = () => {
             friendly and not contributing to pollution.`}
         </p>
       </motion.div>
+      <ToastContainer />
     </section>
   );
 };
