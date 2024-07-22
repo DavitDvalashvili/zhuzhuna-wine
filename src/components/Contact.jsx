@@ -4,10 +4,15 @@ import { useLanguage } from "../context/languageContext.jsx";
 import banner4 from "/images/banner4.png";
 import banner1 from "/images/banner1.png";
 import useWindowWidth from "./../hooks/useWindowWidth.jsx";
+import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "./../animations/animationVariants.jsx";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const { language } = useLanguage();
   const width = useWindowWidth();
+
+  const [ref, controls, variants] = useAnimateOnScroll(animationVariants);
 
   const [formData, setFormData] = useState({
     mobile: "",
@@ -56,12 +61,17 @@ const Contact = () => {
 
   return (
     <section
+      id="contact"
       className="flex justify-between md:justify-evenly  bg-cover bg-left h-[352px] xl:h-[594px] px-[20px] xl:pl-[80px] xl:pr-[225px] xl:py-[112px] py-[26px] gap-[24px] xl:gap-[123px]"
       style={{
         backgroundImage: `url(${width < 1440 ? banner4 : banner1})`,
       }}
+      ref={ref}
     >
-      <form
+      <motion.form
+        initial="hidden"
+        animate={controls}
+        variants={variants}
         onSubmit={handleSubmit}
         className="space-y-3 xl:space-y-[17px] w-[209px] xl:w-[328px]"
       >
@@ -131,8 +141,13 @@ const Contact = () => {
         >
           {language == "GE" ? "გაგზავნა" : "SEND"}
         </button>
-      </form>
-      <div className="max-w-[177px] text-[12px] xl:text-[24px] text-color-primary font-arialgeo xl:max-w-[unset] xl:w-[685px]">
+      </motion.form>
+      <motion.div
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+        className="max-w-[177px] text-[12px] xl:text-[24px] text-color-primary font-arialgeo xl:max-w-[unset] xl:w-[685px]"
+      >
         <p className="mb-[9px]">
           {language == "GE"
             ? `ქორფა ჟუჟუნა უამრავ კაფე-ბარში შეგხვდება და შენთვის საყვარელ
@@ -151,7 +166,7 @@ const Contact = () => {
             does not require additional packaging, making it particularly environmentally 
             friendly and not contributing to pollution.`}
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };
