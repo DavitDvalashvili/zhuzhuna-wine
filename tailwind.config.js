@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "darkMode",
   theme: {
     extend: {
       fontFamily: {
@@ -14,6 +14,7 @@ export default {
           purpleMid: "#724AA4",
           purpleEnd: "#1E122E",
           backgroundCol: "#F5F5F5",
+          backgroundSecondary: "#373b53",
 
           dark: {
             backgroundCol: "#000",

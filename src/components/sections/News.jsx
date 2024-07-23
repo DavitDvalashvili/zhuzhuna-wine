@@ -1,8 +1,8 @@
-import news from "./../assets/news.json";
-import { useLanguage } from "../context/languageContext.jsx";
-import Button from "./Button.jsx";
-import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
-import animationVariants from "./../animations/animationVariants.jsx";
+import news from "./../../assets/news.json";
+import { useLanguage } from "./../../context/languageContext.jsx";
+import Button from ".././Button.jsx";
+import useAnimateOnScroll from "./../../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "./../../animations/animationVariants.jsx";
 import { motion } from "framer-motion";
 
 const News = () => {
@@ -14,10 +14,10 @@ const News = () => {
     <section
       ref={ref}
       id="news"
-      className="p-[20px] xl:px-[80px] xl:py-[40px] bg-backgroundColor-backgroundCol "
+      className="p-[20px] xl:px-[80px] xl:py-[40px] bg-backgroundColor-backgroundCol  dark:bg-backgroundColor-dark-backgroundCol "
     >
       <motion.div initial="hidden" animate={controls} variants={variants}>
-        <h2 className="mb-[20px] text-[48px] xl:text-[64px] leading-[56px] font-tommaso">
+        <h2 className="mb-[20px] text-[48px] xl:text-[64px] leading-[56px] font-tommaso dark:text-color-primary">
           {language == "GE" ? "სიახლეები" : "News"}
         </h2>
         <div className="flex flex-col gap-[20px] bg-center max-w-[768px] xl:max-w-full xl:flex-row xl:justify-evenly mx-auto">
@@ -32,7 +32,7 @@ const News = () => {
                   backgroundImage: `url(${newsItem.image})`,
                 }}
               ></div>
-              <div className="px-[16px] py-[20px] text-color-primary font-arialgeo flex flex-col gap-[20px]">
+              <div className="px-[16px] py-[20px] text-color-primary dark:bg font-arialgeo flex flex-col gap-[20px]">
                 <p className="text-[14px]">{newsItem.date}</p>
                 <h3 className=" text-[24px] leading-[28px]">
                   {newsItem.title}

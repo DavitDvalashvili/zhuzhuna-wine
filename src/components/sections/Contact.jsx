@@ -1,11 +1,11 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { useLanguage } from "../context/languageContext.jsx";
+import { useLanguage } from "./../../context/languageContext.jsx";
 import banner4 from "/images/banner4.png";
 import banner1 from "/images/banner1.png";
-import useWindowWidth from "./../hooks/useWindowWidth.jsx";
-import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
-import animationVariants from "./../animations/animationVariants.jsx";
+import useWindowWidth from "./../../hooks/useWindowWidth.jsx";
+import useAnimateOnScroll from "./../../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "./../../animations/animationVariants.jsx";
 import { motion } from "framer-motion";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -50,7 +50,7 @@ const Contact = () => {
     e.preventDefault();
 
     const serviceID = "service_7150c0g";
-    const templateID = "template_2o0zlkk";
+    const templateID = "template_2o0zlkh";
     const userID = "iT2E3wYN0u4FTwetc";
 
     const templateParams = {

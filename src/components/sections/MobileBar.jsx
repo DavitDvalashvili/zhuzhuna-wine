@@ -1,7 +1,7 @@
 import banner2 from "/images/banner2.png";
-import { useLanguage } from "../context/languageContext.jsx";
-import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
-import animationVariants from "./../animations/animationVariants.jsx";
+import { useLanguage } from "./../../context/languageContext.jsx";
+import useAnimateOnScroll from "./../../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "./../../animations/animationVariants.jsx";
 import { motion } from "framer-motion";
 
 const MobileBar = () => {

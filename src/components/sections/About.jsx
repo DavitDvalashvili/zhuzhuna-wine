@@ -1,8 +1,8 @@
 import marani from "/images/marani.png";
-import { useLanguage } from "../context/languageContext.jsx";
+import { useLanguage } from "../../context/languageContext.jsx";
 import { motion } from "framer-motion";
-import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
-import animationVariants from "./../animations/animationVariants.jsx";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "../../animations/animationVariants.jsx";
 
 const About = () => {
   const { language } = useLanguage();

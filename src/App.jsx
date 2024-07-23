@@ -1,13 +1,13 @@
-import Zhuzhuna from "./components/Zhuzhuna";
 import { LanguageProvider } from "./context/languageContext";
 import Footer from "./Layout/Footer";
 import Header from "./Layout/Header";
-import News from "./components/News";
-import Bottle from "./components/Bottle";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Cocktails from "./components/Cocktails";
-import MobileBar from "./components/MobileBar";
+import News from "./components/sections/News";
+import Bottle from "./components/sections/Bottle";
+import About from "./components/sections/About";
+import Contact from "./components/sections/Contact";
+import Cocktails from "./components/sections/Cocktails";
+import MobileBar from "./components/sections/MobileBar";
+import Zhuzhuna from "./components/sections/Zhuzhuna";
 
 function App() {
   return (

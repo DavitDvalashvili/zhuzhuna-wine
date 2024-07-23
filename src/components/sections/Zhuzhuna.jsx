@@ -1,9 +1,9 @@
 import bannerMobile from "/images/banner3.png";
 import bannerDesktop from "/images/banner.png";
-import useWindowWidth from "./../hooks/useWindowWidth.jsx";
-import { useLanguage } from "../context/languageContext.jsx";
-import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
-import animationVariants from "./../animations/animationVariants.jsx";
+import useWindowWidth from "./../../hooks/useWindowWidth.jsx";
+import { useLanguage } from "./../../context/languageContext.jsx";
+import useAnimateOnScroll from "./../../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "./../../animations/animationVariants.jsx";
 import { motion } from "framer-motion";
 
 const Zhuzhuna = () => {
@@ -14,7 +14,7 @@ const Zhuzhuna = () => {
 
   return (
     <section
-      className="h-[459px] xl:h-[720px] bg-cover bg-bottom md:bg-right px-[23px] py-[30px] text-color-primary xl:px-[80px] xl:py-[77px]"
+      className="h-[459px] xl:h-[720px] bg-cover bg-bottom md:bg-right px-[23px] py-[30px] text-color-primary  xl:px-[80px] xl:py-[77px]"
       style={{
         backgroundImage: `url(${width >= 768 ? bannerDesktop : bannerMobile})`,
       }}

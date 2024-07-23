@@ -1,10 +1,10 @@
-import { useLanguage } from "../context/languageContext.jsx";
-import useWindowWidth from "./../hooks/useWindowWidth.jsx";
+import { useLanguage } from "./../../context/languageContext.jsx";
+import useWindowWidth from "./../../hooks/useWindowWidth.jsx";
 import bottle from "/images/bottle.png";
 import bckg1 from "/images/bckg1.png";
 import bckg2 from "/images/bckg2.png";
-import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
-import animationVariants from "./../animations/animationVariants.jsx";
+import useAnimateOnScroll from "./../../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "./../../animations/animationVariants.jsx";
 import { motion } from "framer-motion";
 
 const Bottle = () => {
@@ -16,16 +16,16 @@ const Bottle = () => {
   return (
     <section
       id="bottle"
-      className="xl:px-[80px] bg-backgroundColor-backgroundCol "
+      className="xl:px-[80px] bg-backgroundColor-backgroundCol dark:bg-backgroundColor-dark-backgroundCol "
       ref={ref}
     >
       <motion.div
         initial="hidden"
         animate={controls}
         variants={variants}
-        className="bg-backgroundColor-backgroundCol"
+        className="bg-backgroundColor-backgroundCol dark:bg-backgroundColor-dark-backgroundCol"
       >
-        <h2 className="mb-[20px] px-[20px] xl:px-[0px] text-[40px] xl:text-[64px] leading-[46px] font-tommaso ">
+        <h2 className="mb-[20px] px-[20px] xl:px-[0px] text-[40px] xl:text-[64px] leading-[46px] font-tommaso dark:text-color-primary ">
           {language == "GE" ? "ბოთლი" : "Bottle"}
         </h2>
         <div

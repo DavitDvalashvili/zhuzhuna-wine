@@ -1,7 +1,7 @@
-import { useLanguage } from "../context/languageContext.jsx";
-import cocktails from "./../assets/cocktails.json";
-import useAnimateOnScroll from "./../hooks/useAnimateOnScroll.jsx";
-import animationVariants from "./../animations/animationVariants.jsx";
+import { useLanguage } from "./../../context/languageContext.jsx";
+import cocktails from "./../../assets/cocktails.json";
+import useAnimateOnScroll from "./../../hooks/useAnimateOnScroll.jsx";
+import animationVariants from "./../../animations/animationVariants.jsx";
 import { motion } from "framer-motion";
 
 const Cocktails = () => {
@@ -13,10 +13,10 @@ const Cocktails = () => {
     <section
       ref={ref}
       id="cocktails"
-      className="pt-[15px] xl:px-[80px] xl:pb-[40px] bg-backgroundColor-backgroundCol"
+      className="pt-[15px] xl:px-[80px] xl:pb-[40px] bg-backgroundColor-backgroundCol dark:bg-backgroundColor-dark-backgroundCol"
     >
       <motion.div initial="hidden" animate={controls} variants={variants}>
-        <h2 className="mb-[20px] px-[20px] xl:px-[0px] text-[40px] xl:text-[64px] leading-[46px] font-tommaso ">
+        <h2 className="mb-[20px] px-[20px] xl:px-[0px] text-[40px] xl:text-[64px] leading-[46px] font-tommaso dark:text-colo">
           {language == "GE" ? "კოქტეილი" : "Cocktail"}
         </h2>
         <div className="xl:grid xl:grid-cols-2 xl:gap-[23px]">
