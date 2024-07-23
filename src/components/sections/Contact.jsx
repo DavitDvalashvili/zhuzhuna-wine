@@ -54,7 +54,7 @@ const Contact = () => {
     const userID = "iT2E3wYN0u4FTwetc";
 
     const templateParams = {
-      to_email: "natogogatishvili1967@gmail.com",
+      to_email: "ltdlinedev@gmail.com",
       mobile: formData.mobile,
       email: formData.email,
       message: formData.message,
