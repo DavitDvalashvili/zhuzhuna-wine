@@ -22,7 +22,8 @@
 
 - <img src="./public/readme/tailwind.png" width="25" style="top: 8px" /> _Tailwind CSS: Utility-first CSS framework for rapid UI development._
 - <img src="./public/readme/react.png" width="25" style="top: 8px" /> _React JS: A powerful JavaScript library for building fast, interactive, and reusable user interfaces_
-- <img src="./public/readme/motion.png" width="25" style="top: 8px" /> Framer Motion: React animation library for smooth, high-performance UI transitions.
+- <img src="./public/readme/motion.png" width="25" style="top: 8px" /> _Framer Motion: React animation library for smooth, high-performance UI transitions_
+- <img src="./public/readme/emailJS.png" width="25" style="top: 8px" /> _EmailJS: Service that lets you send emails directly from client-side apps without server code_
 
 ### Interaction
 
@@ -109,6 +110,10 @@ after this you can use this file to deploy project on server.
 │ │ ├── useAnimateOnScroll.jsx
 │ │ ├── useCountry.jsx
 │ │ └── useWindowWidth.jsx
+│ ├── context/
+│ ├── main.jsx
+│ ├── App.jsx
+│ ├── Index.css
 ├── README.md
 
 ```
