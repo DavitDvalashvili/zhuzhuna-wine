@@ -31,8 +31,7 @@ Users are able to:
 
 - View the optimal layout of the landing page across different screen sizes, ensuring a responsive design.
 - Toggle between light and dark modes to enhance user experience based on preference.
-- Change the language of the page dynamically, with automatic detection to show Georgian if the user is in Georgia;  
-  otherwise, display in English.
+- Change the language of the page dynamically, with automatic detection to show Georgian if the user is in Georgia; otherwise, display in English.
 - Fill out forms and send messages directly from the app to an email address.
 - Receive notifications upon form submission to confirm successful submission.
 - See hover effects and interactive elements throughout the page for an engaging user interface.
